@@ -16,7 +16,22 @@ console = Console()
 
 
 @app.command()
-def scan(url: str):
+def scan(
+
+    url: str,
+
+    html: bool = typer.Option(
+        False,
+        "--html",
+        help="Generate HTML report"
+    ),
+
+    json_output: bool = typer.Option(
+        False,
+        "--json",
+        help="Generate JSON report"
+    )
+):
 
     console.print(f"\n[bold cyan]Scanning[/bold cyan] {url}\n")
 
@@ -67,12 +82,16 @@ def scan(url: str):
             )
 
         console.print(table)
-        
-        generate_html_report(url, report_data)
-        logger.info("HTML report generated")
 
-        generate_json_report(url, report_data)
-        logger.info("JSON report generated")
+        if html:
+
+            generate_html_report(url, report_data)
+            logger.info("HTML report generated")
+
+        if json_output:
+
+            generate_json_report(url, report_data)
+            logger.info("JSON report generated")
         
 
     else:

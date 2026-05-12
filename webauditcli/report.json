@@ -1,16 +1,30 @@
 {
-    "target": "https://www.facebook.com/?q=test",
-    "findings_count": 1,
+    "target": "https://example.com",
+    "findings_count": 3,
     "high_severity": 1,
-    "medium_severity": 0,
+    "medium_severity": 2,
     "low_severity": 0,
     "findings": [
         {
-            "finding": "Possible reflected XSS in parameter: q",
+            "finding": "Missing Content-Security-Policy",
             "severity": "HIGH",
             "likelihood": 3,
             "impact": 3,
             "score": 9
+        },
+        {
+            "finding": "Missing Strict-Transport-Security",
+            "severity": "MEDIUM",
+            "likelihood": 2,
+            "impact": 2,
+            "score": 4
+        },
+        {
+            "finding": "Missing X-Frame-Options",
+            "severity": "MEDIUM",
+            "likelihood": 2,
+            "impact": 2,
+            "score": 4
         }
     ]
 }

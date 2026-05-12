@@ -24,3 +24,19 @@
 2026-05-12 23:04:47,618 INFO Scan finished
 2026-05-12 23:04:47,623 INFO HTML report generated
 2026-05-12 23:04:47,623 INFO JSON report generated
+2026-05-12 23:08:13,397 INFO Starting scan for https://example.com
+2026-05-12 23:08:13,686 INFO Headers scan completed
+2026-05-12 23:08:13,686 INFO XSS scan completed
+2026-05-12 23:08:13,686 INFO Scan finished
+2026-05-12 23:08:13,691 INFO HTML report generated
+2026-05-12 23:08:22,425 INFO Starting scan for https://example.com
+2026-05-12 23:08:22,712 INFO Headers scan completed
+2026-05-12 23:08:22,712 INFO XSS scan completed
+2026-05-12 23:08:22,712 INFO Scan finished
+2026-05-12 23:08:22,715 INFO JSON report generated
+2026-05-12 23:08:41,714 INFO Starting scan for https://example.com
+2026-05-12 23:08:42,008 INFO Headers scan completed
+2026-05-12 23:08:42,009 INFO XSS scan completed
+2026-05-12 23:08:42,009 INFO Scan finished
+2026-05-12 23:08:42,014 INFO HTML report generated
+2026-05-12 23:08:42,015 INFO JSON report generated
