@@ -1,0 +1,79 @@
+
+<html>
+<head>
+    <title>WebAuditCLI Report</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>WebAuditCLI Report</h1>
+
+    <p><strong>Target:</strong> https://example.com</p>
+
+    <table>
+
+        <tr>
+            <th>Finding</th>
+            <th>Severity</th>
+            <th>Likelihood</th>
+            <th>Impact</th>
+            <th>Risk Score</th>
+        </tr>
+
+        
+
+        <tr>
+            <td>Missing Content-Security-Policy</td>
+            <td>HIGH</td>
+            <td>3</td>
+            <td>3</td>
+            <td>9</td>
+        </tr>
+
+        
+
+        <tr>
+            <td>Missing Strict-Transport-Security</td>
+            <td>MEDIUM</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+
+        
+
+        <tr>
+            <td>Missing X-Frame-Options</td>
+            <td>MEDIUM</td>
+            <td>2</td>
+            <td>2</td>
+            <td>4</td>
+        </tr>
+
+        
+
+    </table>
+
+</body>
+</html>

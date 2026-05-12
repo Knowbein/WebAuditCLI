@@ -8,6 +8,7 @@ from risk.severity import get_severity
 from risk.scoring import calculate_risk
 from modules.xss import check_xss
 from utils.logger import logger
+from reporting.html_report import generate_html_report
 
 app = typer.Typer()
 console = Console()
@@ -30,6 +31,8 @@ def scan(url: str):
 
     logger.info("Scan finished")
 
+    report_data = []
+
     if findings:
 
         table = Table(title="Security Findings")
@@ -46,6 +49,14 @@ def scan(url: str):
 
             risk = calculate_risk(finding)
 
+            report_data.append({
+                "finding": finding,
+                "severity": severity,
+                "likelihood": risk["likelihood"],
+                "impact": risk["impact"],
+                "score": risk["score"]
+})
+
             table.add_row(
                 finding,
                 severity,
@@ -55,6 +66,9 @@ def scan(url: str):
             )
 
         console.print(table)
+        generate_html_report(url, report_data)
+
+        logger.info("HTML report generated")
 
     else:
         console.print(
