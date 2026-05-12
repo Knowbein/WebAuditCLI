@@ -7,6 +7,7 @@ from modules.headers import check_headers
 from risk.severity import get_severity
 from risk.scoring import calculate_risk
 from modules.xss import check_xss
+from utils.logger import logger
 
 app = typer.Typer()
 console = Console()
@@ -19,8 +20,15 @@ def scan(url: str):
 
     findings = []
 
+    logger.info(f"Starting scan for {url}")
+
     findings.extend(check_headers(url))
+    logger.info("Headers scan completed")
+
     findings.extend(check_xss(url))
+    logger.info("XSS scan completed")
+
+    logger.info("Scan finished")
 
     if findings:
 
