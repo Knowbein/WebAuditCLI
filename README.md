@@ -35,7 +35,7 @@ It performs lightweight security analysis against web targets and generates stru
 Clone repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/WebAuditCLI.git
+git clone https://github.com/Knowbein/WebAuditCLI.git
 cd WebAuditCLI
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
