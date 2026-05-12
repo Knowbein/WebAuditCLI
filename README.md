@@ -30,6 +30,18 @@ It performs lightweight security analysis against web targets and generates stru
 
 ---
 
+# Screenshots
+
+## CLI Output
+
+![CLI Output](screenshots/cli-output.png)
+
+## HTML Report
+
+![HTML Report](screenshots/html-report.png)
+
+---
+
 # Installation
 
 Clone repository:
