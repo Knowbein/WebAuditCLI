@@ -5,6 +5,7 @@ from rich.table import Table
 
 from modules.headers import check_headers
 from risk.severity import get_severity
+from risk.scoring import calculate_risk
 
 app = typer.Typer()
 console = Console()
@@ -23,15 +24,30 @@ def scan(url: str):
 
         table.add_column("Finding", style="red")
         table.add_column("Severity", style="yellow")
+        table.add_column("Likelihood")
+        table.add_column("Impact")
+        table.add_column("Risk Score")
 
         for finding in findings:
+
             severity = get_severity(finding)
-            table.add_row(finding, severity)
+
+            risk = calculate_risk(finding)
+
+            table.add_row(
+                finding,
+                severity,
+                str(risk["likelihood"]),
+                str(risk["impact"]),
+                str(risk["score"])
+            )
 
         console.print(table)
 
     else:
-        console.print("[bold green][+] All security headers are present[/bold green]")
+        console.print(
+            "[bold green][+] All security headers are present[/bold green]"
+        )
 
 
 if __name__ == "__main__":
