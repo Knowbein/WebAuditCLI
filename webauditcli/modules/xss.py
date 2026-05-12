@@ -1,3 +1,4 @@
+from utils.network import safe_request
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
 import requests
@@ -38,7 +39,9 @@ def check_xss(url):
 
         try:
 
-            response = requests.get(test_url, timeout=5)
+            response = safe_request(test_url)
+            if response is None:
+                continue
 
             if TEST_PAYLOAD in response.text:
 

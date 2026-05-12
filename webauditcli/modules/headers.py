@@ -16,7 +16,11 @@ def check_headers(url):
 
     try:
 
-        response = requests.get(url, timeout=5)
+        from utils.network import safe_request
+        response = safe_request(url)
+        if response is None:
+            findings.append("Failed to retrieve headers")
+            return findings
 
         headers = response.headers
 

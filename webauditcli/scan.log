@@ -46,3 +46,10 @@
 2026-05-12 23:16:13,319 INFO Scan finished
 2026-05-12 23:20:54,117 INFO Starting scan for https://example.com
 2026-05-12 23:20:54,426 INFO Scan finished
+2026-05-12 23:27:02,639 INFO Starting scan for https://invalid-domain-test-123.com
+2026-05-12 23:28:34,699 INFO Starting scan for https://invalid-domain-test-123.com
+2026-05-12 23:28:34,708 ERROR Request failed for https://invalid-domain-test-123.com: HTTPSConnectionPool(host='invalid-domain-test-123.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='invalid-domain-test-123.com', port=443): Failed to resolve 'invalid-domain-test-123.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-12 23:28:34,712 INFO Scan finished
+2026-05-12 23:29:19,293 INFO Starting scan for https://error.com
+2026-05-12 23:29:24,605 ERROR Timeout while connecting to https://error.com
+2026-05-12 23:29:24,609 INFO Scan finished
