@@ -53,3 +53,24 @@
 2026-05-12 23:29:19,293 INFO Starting scan for https://error.com
 2026-05-12 23:29:24,605 ERROR Timeout while connecting to https://error.com
 2026-05-12 23:29:24,609 INFO Scan finished
+2026-05-12 23:30:09,265 INFO Starting scan for https://1234.com
+2026-05-12 23:30:10,095 INFO Scan finished
+2026-05-12 23:30:21,931 INFO Starting scan for https://google.com
+2026-05-12 23:30:22,516 INFO Scan finished
+2026-05-12 23:31:37,033 INFO Starting scan for https://harskankauppa1.fi
+2026-05-12 23:31:37,319 INFO Scan finished
+2026-05-12 23:32:32,314 INFO Starting scan for https://google.com
+2026-05-12 23:32:32,900 INFO Scan finished
+2026-05-12 23:32:40,921 INFO Starting scan for https://1234.com
+2026-05-12 23:32:43,219 ERROR SSL error for https://1234.com
+2026-05-12 23:32:43,222 INFO Scan finished
+2026-05-12 23:32:49,928 INFO Starting scan for https://example.com
+2026-05-12 23:32:50,223 INFO Scan finished
+2026-05-12 23:32:58,906 INFO Starting scan for https://www.facebook.com/?q=test
+2026-05-12 23:33:00,548 INFO Scan finished
+2026-05-12 23:33:09,363 INFO Starting scan for https://www.facebook.com
+2026-05-12 23:33:10,051 INFO Scan finished
+2026-05-12 23:33:47,013 INFO Starting scan for https://harskankauppa1.fi/?q=test
+2026-05-12 23:33:50,315 INFO Scan finished
+2026-05-12 23:34:46,413 INFO Starting scan for https://www.facebook.com
+2026-05-12 23:34:47,051 INFO Scan finished
