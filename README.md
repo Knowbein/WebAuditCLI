@@ -34,11 +34,11 @@ It performs lightweight security analysis against web targets and generates stru
 
 ## CLI Output
 
-![CLI Output](screenshots/cli-output.png)
+![CLI Output](webauditcli/screenshots/cli-output.png)
 
 ## HTML Report
 
-![HTML Report](screenshots/html-report.png)
+![HTML Report](webauditcli/screenshots/html-report.png)
 
 ---
 
