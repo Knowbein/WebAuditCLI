@@ -13,3 +13,14 @@
 2026-05-12 22:25:33,837 INFO XSS scan completed
 2026-05-12 22:25:33,838 INFO Scan finished
 2026-05-12 22:25:33,843 INFO HTML report generated
+2026-05-12 22:27:23,416 INFO Starting scan for https://www.facebook.com/?q=test
+2026-05-12 22:27:24,167 INFO Headers scan completed
+2026-05-12 22:27:24,833 INFO XSS scan completed
+2026-05-12 22:27:24,833 INFO Scan finished
+2026-05-12 22:27:24,838 INFO HTML report generated
+2026-05-12 23:04:46,219 INFO Starting scan for https://www.facebook.com/?q=test
+2026-05-12 23:04:46,938 INFO Headers scan completed
+2026-05-12 23:04:47,617 INFO XSS scan completed
+2026-05-12 23:04:47,618 INFO Scan finished
+2026-05-12 23:04:47,623 INFO HTML report generated
+2026-05-12 23:04:47,623 INFO JSON report generated

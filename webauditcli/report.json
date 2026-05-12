@@ -1,0 +1,16 @@
+{
+    "target": "https://www.facebook.com/?q=test",
+    "findings_count": 1,
+    "high_severity": 1,
+    "medium_severity": 0,
+    "low_severity": 0,
+    "findings": [
+        {
+            "finding": "Possible reflected XSS in parameter: q",
+            "severity": "HIGH",
+            "likelihood": 3,
+            "impact": 3,
+            "score": 9
+        }
+    ]
+}

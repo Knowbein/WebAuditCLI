@@ -9,6 +9,7 @@ from risk.scoring import calculate_risk
 from modules.xss import check_xss
 from utils.logger import logger
 from reporting.html_report import generate_html_report
+from reporting.json_report import generate_json_report
 
 app = typer.Typer()
 console = Console()
@@ -66,9 +67,13 @@ def scan(url: str):
             )
 
         console.print(table)
+        
         generate_html_report(url, report_data)
-
         logger.info("HTML report generated")
+
+        generate_json_report(url, report_data)
+        logger.info("JSON report generated")
+        
 
     else:
         console.print(

@@ -29,7 +29,7 @@
 
     <h1>WebAuditCLI Report</h1>
 
-    <p><strong>Target:</strong> https://example.com</p>
+    <p><strong>Target:</strong> https://www.facebook.com/?q=test</p>
 
     <table>
 
@@ -44,31 +44,11 @@
         
 
         <tr>
-            <td>Missing Content-Security-Policy</td>
+            <td>Possible reflected XSS in parameter: q</td>
             <td>HIGH</td>
             <td>3</td>
             <td>3</td>
             <td>9</td>
-        </tr>
-
-        
-
-        <tr>
-            <td>Missing Strict-Transport-Security</td>
-            <td>MEDIUM</td>
-            <td>2</td>
-            <td>2</td>
-            <td>4</td>
-        </tr>
-
-        
-
-        <tr>
-            <td>Missing X-Frame-Options</td>
-            <td>MEDIUM</td>
-            <td>2</td>
-            <td>2</td>
-            <td>4</td>
         </tr>
 
         
