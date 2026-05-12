@@ -30,12 +30,24 @@ It performs lightweight security analysis against web targets and generates stru
 
 ---
 
+# Screenshots
+
+## CLI Output
+
+![CLI Output](screenshots/cli-output.png)
+
+## HTML Report
+
+![HTML Report](screenshots/html-report.png)
+
+---
+
 # Installation
 
 Clone repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/WebAuditCLI.git
+git clone https://github.com/Knowbein/WebAuditCLI.git
 cd WebAuditCLI
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -44,6 +56,7 @@ pip install -r requirements.txt
 # Usage
 
 python cli.py https://example.com
+python cli.py https://example.com/?q=test # XSS
 python cli.py https://example.com --html
 python cli.py https://example.com --json
 python cli.py https://example.com --html --json
