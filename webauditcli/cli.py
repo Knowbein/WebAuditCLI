@@ -9,6 +9,7 @@ from reporting.html_report import generate_html_report
 from reporting.json_report import generate_json_report
 
 from utils.logger import logger
+from utils.statistics import calculate_statistics
 
 
 app = typer.Typer()
@@ -39,6 +40,8 @@ def scan(
 
     report_data = run_scan(url)
 
+    stats = calculate_statistics(report_data)
+
     table = Table(title="Security Findings")
 
     table.add_column("Finding", style="red")
@@ -58,6 +61,14 @@ def scan(
         )
 
     console.print(table)
+
+    console.print("\n[bold cyan]Scan Summary[/bold cyan]\n")
+
+    console.print(f"[red]HIGH:[/red] {stats['high']}")
+    console.print(f"[yellow]MEDIUM:[/yellow] {stats['medium']}")
+    console.print(f"[green]LOW:[/green] {stats['low']}")
+    
+    console.print(f"\n[bold]Total Findings:[/bold] {stats['total']}")
 
     if html:
 

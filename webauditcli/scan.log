@@ -44,3 +44,5 @@
 2026-05-12 23:16:13,319 INFO HTML report generated
 2026-05-12 23:16:13,319 INFO JSON report generated
 2026-05-12 23:16:13,319 INFO Scan finished
+2026-05-12 23:20:54,117 INFO Starting scan for https://example.com
+2026-05-12 23:20:54,426 INFO Scan finished
