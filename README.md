@@ -44,6 +44,7 @@ pip install -r requirements.txt
 # Usage
 
 python cli.py https://example.com
+python cli.py https://example.com/?q=test # XSS
 python cli.py https://example.com --html
 python cli.py https://example.com --json
 python cli.py https://example.com --html --json
