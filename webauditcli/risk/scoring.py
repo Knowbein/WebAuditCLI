@@ -12,6 +12,10 @@ RISK_MATRIX = {
     "X-Frame-Options": {
         "likelihood": 2,
         "impact": 2
+    },
+    "Possible reflected XSS": {
+    "likelihood": 3,
+    "impact": 3
     }
 }
 

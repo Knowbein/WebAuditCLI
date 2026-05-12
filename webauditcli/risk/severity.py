@@ -1,7 +1,8 @@
 SEVERITY_MAP = {
     "Content-Security-Policy": "HIGH",
     "Strict-Transport-Security": "MEDIUM",
-    "X-Frame-Options": "MEDIUM"
+    "X-Frame-Options": "MEDIUM",
+    "Possible reflected XSS": "HIGH",
 }
 
 

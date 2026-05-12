@@ -6,6 +6,7 @@ from rich.table import Table
 from modules.headers import check_headers
 from risk.severity import get_severity
 from risk.scoring import calculate_risk
+from modules.xss import check_xss
 
 app = typer.Typer()
 console = Console()
@@ -16,7 +17,10 @@ def scan(url: str):
 
     console.print(f"\n[bold cyan]Scanning[/bold cyan] {url}\n")
 
-    findings = check_headers(url)
+    findings = []
+
+    findings.extend(check_headers(url))
+    findings.extend(check_xss(url))
 
     if findings:
 
