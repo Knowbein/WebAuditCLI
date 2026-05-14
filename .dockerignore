@@ -1,0 +1,7 @@
+.venv
+__pycache__
+*.pyc
+scan.log
+report.html
+report.json
+screenshots
