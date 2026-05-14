@@ -70,3 +70,13 @@ Finding                           Severity
 ------------------------------------------------
 Missing CSP                       HIGH
 Missing X-Frame-Options           MEDIUM
+
+# Docker
+
+Build image:
+
+docker build -t webauditcli .
+
+Run container:
+
+docker run webauditcli
